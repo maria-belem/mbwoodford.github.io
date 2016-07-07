@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Contact Maria-Belem</title>
+    <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+    <!--logo link-->
+    <link rel="icon" type="image/MB_logo" href="./Data/MB_logo.jpg"/>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <nav class="nav">
+        <ul>
+          <li class="nav-item"><a href="./index.html">Home</a></li>
+          <!--<li class="nav-item"><a href="./gallery.html">Gallery</a></li>-->
+          <li class="nav-item"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2 class="sub title">Contact Maria-Belem</h2>
+      <h4 class="title">yes, maria-belem is my first name</h4>
+
+      <form class="flex column">
+
+        <input id="js-email" class="input-field-email" type="email" placeholder="Your Email" name="_replyto" required/>
+        <textarea id="js-message" class="input-field" rows="10" cols="20" placeholder="Write to me!" required></textarea>
+
+        <input type="hidden" name="_subject" value="Email from MB's Portfolio!" />
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <button class="button" type="submit" value="Send">Send</button>
+      </form>
+    </section>
+
+    <!--load java script after HTML has loaded so user isn't waiting-->
+    <script src="./vendor/jquery-2.2.0.min.js"></script>
+    <script src="./js/contact.js"></script>
+  </body>
+</html>
